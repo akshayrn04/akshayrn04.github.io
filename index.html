@@ -136,20 +136,24 @@
     </section>
 
 
-    <!-- Projects -->
-    <section id="projects">
+<!-- Projects -->
+<section id="projects">
 
-        <h2>Featured Projects</h2>
+    <h2>Featured Projects</h2>
 
+    <div class="projects-grid">
 
         <!-- Project 1 -->
-        <article>
+        <article class="project-card">
 
             <h3>Smart Surveillance Checkpost System</h3>
 
-            <p>
-                Python · OpenCV · dlib · Multithreading · Raspberry Pi
-            </p>
+            <div class="tech-stack">
+                <span>Python</span>
+                <span>OpenCV</span>
+                <span>dlib</span>
+                <span>Raspberry Pi</span>
+            </div>
 
             <p>
                 A real-time surveillance system using a concurrent,
@@ -158,40 +162,41 @@
             </p>
 
             <p>
-                The system uses a software-only virtual tripwire to
-                trigger computationally expensive inference only when
+                Uses a software-only virtual tripwire to trigger
+                computationally expensive inference only when
                 genuine motion is detected.
             </p>
-
-            <a href="https://github.com/akshayrn04" target="_blank">
-                View on GitHub →
-            </a>
 
         </article>
 
 
         <!-- Project 2 -->
-        <article>
+        <article class="project-card">
 
             <h3>Realtime Panoptic Segmentation</h3>
 
+            <div class="tech-stack">
+                <span>Python</span>
+                <span>PyTorch</span>
+                <span>Detectron2</span>
+                <span>OpenCV</span>
+                <span>ResNet-50</span>
+            </div>
+
             <p>
-                Python · PyTorch · Detectron2 · OpenCV · ResNet-50
+                A real-time computer vision system using a Feature
+                Pyramid Network with a ResNet-50 backbone for
+                simultaneous instance and semantic segmentation.
             </p>
 
             <p>
-                A real-time computer vision system using a Feature Pyramid
-                Network with a ResNet-50 backbone for simultaneous instance
-                and semantic segmentation using the COCO dataset.
-            </p>
-
-            <p>
-                The system was optimized for CPU portability through
-                on-demand frame capture and confidence thresholding.
+                Optimized for CPU portability through on-demand
+                frame capture and confidence thresholding.
             </p>
 
             <a href="https://github.com/akshayrn04/realtime-panoptic-segmentation"
-               target="_blank">
+               target="_blank"
+               class="project-link">
                 View Project →
             </a>
 
@@ -199,58 +204,64 @@
 
 
         <!-- Project 3 -->
-        <article>
+        <article class="project-card">
 
             <h3>Home Security System using UART</h3>
 
+            <div class="tech-stack">
+                <span>Embedded C</span>
+                <span>Python</span>
+                <span>AT89S52</span>
+                <span>UART</span>
+            </div>
+
             <p>
-                Embedded C · Python · AT89S52 · UART
+                A two-tier distributed security system connecting
+                an embedded sensor node to a PC compute node through
+                UART.
             </p>
 
             <p>
-                A two-tier distributed security system connecting an
-                embedded sensor node to a PC compute node through UART,
-                enabling Python-based face recognition and automated
-                local logging.
+                Enables Python-based face recognition and automated
+                local logging for security monitoring.
             </p>
-
-            <a href="https://github.com/akshayrn04" target="_blank">
-                View on GitHub →
-            </a>
 
         </article>
 
 
         <!-- Project 4 -->
-        <article>
+        <article class="project-card">
 
             <h3>Nexa AI – AI Placement Mentor</h3>
 
+            <div class="tech-stack">
+                <span>Python</span>
+                <span>Streamlit</span>
+                <span>Gemini API</span>
+            </div>
+
             <p>
-                Python · Streamlit · Google Gemini API
+                A multi-mode AI assistant designed to simulate
+                technical mock interviews, explain core computer
+                science concepts and provide DSA guidance.
             </p>
 
             <p>
-                A multi-mode AI assistant designed to simulate technical
-                mock interviews, explain core computer science concepts
-                and provide DSA problem-solving guidance.
-            </p>
-
-            <p>
-                Includes context-aware prompting, automatic retry handling
+                Includes context-aware prompting, retry handling
                 for temporary API errors and persistent chat history.
             </p>
 
             <a href="https://github.com/akshayrn04/NEXA-AI"
-               target="_blank">
+               target="_blank"
+               class="project-link">
                 View Project →
             </a>
 
         </article>
 
-    </section>
+    </div>
 
-
+</section>
     <!-- Education -->
     <section id="education">
 
