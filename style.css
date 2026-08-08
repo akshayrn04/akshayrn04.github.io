@@ -537,34 +537,3 @@ body.dark-mode #about p {
 
 /* About Card */
 
-.about-card {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 35px;
-    background: white;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
-}
-
-.about-card p {
-    color: #4b5563;
-    line-height: 1.8;
-    margin-bottom: 18px;
-}
-
-.about-card p:last-child {
-    margin-bottom: 0;
-}
-
-
-/* Dark mode */
-
-body.dark-mode .about-card {
-    background: #111827;
-    border-color: #374151;
-}
-
-body.dark-mode .about-card p {
-    color: #d1d5db;
-}
