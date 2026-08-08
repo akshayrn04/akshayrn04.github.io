@@ -363,18 +363,21 @@ footer {
         min-height: auto;
     }
 
-    .hero-content {
+    #home .hero-content {
         flex-direction: column-reverse;
         text-align: center;
     }
 
-    .hero-image {
+    #home .hero-image {
         flex: none;
+        width: auto;
+        height: auto;
     }
 
-    .hero-image img {
+    #home .hero-image img {
         width: 220px;
         height: 220px;
+        max-width: 220px;
     }
 
     .hero-text h1 {
