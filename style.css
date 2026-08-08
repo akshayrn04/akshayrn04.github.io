@@ -535,5 +535,47 @@ body.dark-mode #about p {
 
 
 
-/* About Card */
+/* Contact */
+
+#contact {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#contact p {
+    margin: 15px auto 30px;
+    max-width: 650px;
+    line-height: 1.7;
+    color: #4b5563;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.contact-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+
+/* Dark mode */
+
+body.dark-mode #contact p {
+    color: #d1d5db;
+}
 
