@@ -509,3 +509,26 @@ body.dark-mode #theme-toggle {
 body.dark-mode .skill-group h3 {
     color: #ffffff !important;
 }
+
+
+/* About */
+
+#about {
+    background: #f8fafc;
+}
+
+#about p {
+    max-width: 900px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Dark mode */
+
+body.dark-mode #about {
+    background: #1f2937;
+}
+
+body.dark-mode #about p {
+    color: #d1d5db;
+}
