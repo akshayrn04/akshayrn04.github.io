@@ -502,3 +502,10 @@ body.dark-mode .hero-image img {
 body.dark-mode #theme-toggle {
     color: white;
 }
+.skill-group h3 {
+    color: #111827 !important;
+}
+
+body.dark-mode .skill-group h3 {
+    color: #ffffff !important;
+}
