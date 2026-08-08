@@ -178,37 +178,69 @@ section h2 {
     background: #f8fafc;
 }
 
-article {
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.project-card {
     background: white;
     padding: 30px;
-    margin-bottom: 25px;
-    border-radius: 10px;
+    border-radius: 12px;
     border: 1px solid #e5e7eb;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-article:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
-article h3 {
-    font-size: 23px;
-    margin-bottom: 8px;
+.project-card h3 {
+    font-size: 22px;
+    margin-bottom: 18px;
     color: #111827;
 }
 
-article p {
-    margin-bottom: 12px;
+.project-card p {
+    margin-bottom: 14px;
     color: #4b5563;
 }
 
-article a {
+
+/* Technology badges */
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.tech-stack span {
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* Project link */
+
+.project-link {
+    display: inline-block;
+    margin-top: 8px;
     color: #2563eb;
     text-decoration: none;
     font-weight: bold;
 }
 
+.project-link:hover {
+    text-decoration: underline;
+}
 
 /* Education */
 
@@ -259,6 +291,9 @@ footer {
 /* Mobile */
 
 @media (max-width: 700px) {
+    .projects-grid {
+    grid-template-columns: 1fr;
+    }
 
     nav {
         flex-direction: column;
@@ -306,7 +341,27 @@ footer {
     }
 }
 /* Dark Mode */
+body.dark-mode .project-card {
+    background: #1f2937;
+    border-color: #374151;
+}
 
+body.dark-mode .project-card h3 {
+    color: #f9fafb;
+}
+
+body.dark-mode .project-card p {
+    color: #d1d5db;
+}
+
+body.dark-mode .tech-stack span {
+    background: #1e3a8a;
+    color: #bfdbfe;
+}
+
+body.dark-mode .project-link {
+    color: #60a5fa;
+}
 body.dark-mode {
     background: #111827;
     color: #e5e7eb;
