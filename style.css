@@ -557,6 +557,8 @@ body.dark-mode #about p {
 }
 
 .contact-btn {
+    color: #ffffff !important;
+    background: #2563eb;
     display: inline-block;
     padding: 12px 24px;
     border-radius: 7px;
@@ -568,6 +570,9 @@ body.dark-mode #about p {
 }
 
 .contact-btn:hover {
+
+    color: #ffffff !important;
+
     transform: translateY(-2px);
     opacity: 0.9;
 }
